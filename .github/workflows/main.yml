@@ -16,7 +16,7 @@ jobs:
       - run: npm run lint
       - run: bun test
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
 
   test-action:
     runs-on: ubuntu-latest
